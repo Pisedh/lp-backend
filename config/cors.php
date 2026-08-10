@@ -2,7 +2,10 @@
 
 return [
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => [
+        'api/*',
+        'sanctum/csrf-cookie',
+    ],
 
     'allowed_methods' => ['*'],
 
@@ -20,7 +23,6 @@ return [
 
     'max_age' => 0,
 
-    // IMPORTANT: false for Bearer token auth
     'supports_credentials' => false,
 
 ];
